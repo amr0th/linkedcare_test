@@ -1,9 +1,9 @@
 <%= render partial: 'form'%>
 <br/>
-<%if @has_stuff%>
+<%if @results%>
 	
 	<div class="well">
-		<%@has_stuff.each do |item|%>
+		<%@results.each do |item|%>
 			<span class="badge"><%=item%></span>
 		<%end%>
 	</div>

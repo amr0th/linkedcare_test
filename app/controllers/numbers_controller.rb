@@ -10,7 +10,7 @@ class NumbersController < ApplicationController
 																												   	['care', params[:numbers][:second_number].to_i]
 																								          ]
 																								})
-		@has_stuff = number_test.perform
+		@results = number_test.perform
 		render "index"
 	end
 
