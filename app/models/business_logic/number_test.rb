@@ -17,11 +17,9 @@ class BusinessLogic::NumberTest
 	end
 
 	def perform
-		
 		results_arr = []
 
 		(@min_value..@max_value).map {|number|
-
 			item_text = check_values(number)
 			results_arr << text_or_value(item_text, number)
 		}
